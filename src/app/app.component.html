@@ -1,9 +1,9 @@
 <div class="container">
   <img width="300" alt="Angular Logo" src="../assets/xtreme.png">
+  <button (click)="random_number()">Generate Random Number</button>
+  {{random_num}}
   <div class="num-container">
     <app-number *ngFor="let number of all_numbers" [num]="number" (click)="onClicked(number)"
                 [ngClass]="{selected: selected[number - 1]}"></app-number>
   </div>
-  <button (click)="random_number()">Generate Random Number</button>
-  {{random_num}}
 </div>
