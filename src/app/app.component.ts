@@ -1,5 +1,4 @@
-import {Component, Output} from '@angular/core';
-import {analyzeAndValidateNgModules} from "@angular/compiler";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
